@@ -1,8 +1,8 @@
 # NMT French to English Model
 
-This repository contains the training notebook of the Neural Machine Translation (NMT) model  to translate French text to English. It uses state-of-the-art transformer-based architecture for high-quality translations. This repository includes the fine-tuned model and information on how to use it.
+This repository contains the training notebook of the Neural Machine Translation (NMT) model  to translate French text to English. It uses a state-of-the-art transformer-based architecture for high-quality translations. This repository includes the fine-tuned model and information on how to use it.
 
-For more information of the model, visit [my Hugging Face Profile](https://huggingface.co/nambn0321).
+For more information on the model, visit [my Hugging Face Profile](https://huggingface.co/nambn0321/NMT_opus_fr_en).
 
 ## Model Overview
 
