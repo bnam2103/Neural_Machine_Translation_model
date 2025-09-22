@@ -37,6 +37,6 @@ print(english_translation[0]['translation_text'])
 
 ## Notes
 
-Evaluation: The model has been evaluated on a French-English translation test set from the Opus corpus.
+- Evaluation: The model has been evaluated on a French-English translation test set from the Opus corpus.
 
-Translation Context: The model works best for general, non-specialized language but may require additional fine-tuning for specific domains.
+- Translation Context: The model works best for general, non-specialized language but may require additional fine-tuning for specific domains.
