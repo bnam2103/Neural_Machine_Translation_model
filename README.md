@@ -25,27 +25,28 @@ You can try [the French to English translation](https://huggingface.co/spaces/na
   - **Limitations**: Does not account for synonyms or sentence structure.
 
 Mix of every source includes Tatoeba, Europarl, NewsCommentary, OpenSubtitles, NewsDocumentary, and CCMatrix
-| **Test Set / Model**                         | **Helsinki** | **My Fine-Tuned Model** | **facebook/mbart-large-50-many-to-many-mmt** | **facebook/m2m100_418M** |
-|--------------------------------------|--------------|-------------------------|---------------------------------------------|--------------------------|
-| **mix of every sources**             | 72.50        | 69.38                   | 68.08                                       | 25.16                    |
-| **newsdiscusstest2015-enfr**         | 39.45        | 36.92                   | 37.23                                       | 10.55                    |
-| **news-test2008**                    | 27.08        | 24.99                   | 26.49                                       | 7.45                     |
-| **newstest2009**                     | 31.11        | 28.50                   | 30.30                                       | 8.14                     |
-| **newstest2014-fren**                | 38.99        | 34.72                   | 37.79                                       | 8.37                     |
+     
+| **Test Set / Model**                  | **My Fine-Tuned Model** | **facebook/mbart-large-50-many-to-many-mmt** | **facebook/m2m100_418M** |
+|--------------------------------------|-------------------------|---------------------------------------------|--------------------------|
+| **mix of every sources**             | 69.38                   | 68.08                                       | 25.16                    |
+| **newsdiscusstest2015-enfr**         | 36.92                   | 37.23                                       | 10.55                    |
+| **news-test2008**                    | 24.99                   | 26.49                                       | 7.45                     |
+| **newstest2009**                     | 28.50                   | 30.30                                       | 8.14                     |
+| **newstest2014-fren**                | 34.72                   | 37.79                                       | 8.37                     |
 
 
 ### **ROUGE-L Scores** (higher is better)
-  - **Purpose**: Measures the longest common subsequence (LCS) between the candidate and reference translations.
+  - **Purpose**: Measures the longest common subsequence between the translations and the references.
   - **Interpretation**: Higher ROUGE-L scores indicate better preservation of meaning and content in the translation.
   - **Limitations**: May not fully capture fluency or grammatical correctness.
      
-| **Test Set / Model**                        | **Helsinki** | **My Fine-Tuned Model** | **facebook/mbart-large-50-many-to-many-mmt** | **facebook/m2m100_418M** |
-|--------------------------------------|--------------|-------------------------|---------------------------------------------|--------------------------|
-| **mix of every sources**             | 89.04        | 88.56                   | 86.79                                       | 45.32                    |
-| **newsdiscusstest2015-enfr**         | 65.75        | 64.40                   | 63.48                                       | 33.24                    |
-| **news-test2008**                    | 54.77        | 53.33                   | 53.85                                       | 25.64                    |
-| **newstest2009**                     | 58.25        | 56.44                   | 57.49                                       | 25.65                    |
-| **newstest2014-fren**                | 65.97        | 63.82                   | 64.88                                       | 27.76                    |
+| **Test Set / Model**                 | **My Fine-Tuned Model** | **facebook/mbart-large-50-many-to-many-mmt** | **facebook/m2m100_418M** |
+|--------------------------------------|-------------------------|---------------------------------------------|--------------------------|
+| **mix of every sources**             | 88.56                   | 86.79                                       | 45.32                    |
+| **newsdiscusstest2015-enfr**         | 64.40                   | 63.48                                       | 33.24                    |
+| **news-test2008**                    | 53.33                   | 53.85                                       | 25.64                    |
+| **newstest2009**                     | 56.44                   | 57.49                                       | 25.65                    |
+| **newstest2014-fren**                | 63.82                   | 64.88                                       | 27.76                    |
 ## Usage
 ```python
 from transformers import pipeline
