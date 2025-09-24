@@ -23,7 +23,8 @@ You can try [the French to English translation](https://huggingface.co/spaces/na
   - **Purpose**: Measures the precision of n-grams (word sequences) in the candidate translation compared to reference translations.
   - **Interpretation**: Higher BLEU scores indicate better word-level overlap with the reference.
   - **Limitations**: Does not account for synonyms or sentence structure.
-     
+
+Mix of every source includes Tatoeba, Europarl, NewsCommentary, OpenSubtitles, NewsDocumentary, and CCMatrix
 | **Test Set / Model**                         | **Helsinki** | **My Fine-Tuned Model** | **facebook/mbart-large-50-many-to-many-mmt** | **facebook/m2m100_418M** |
 |--------------------------------------|--------------|-------------------------|---------------------------------------------|--------------------------|
 | **mix of every sources**             | 72.50        | 69.38                   | 68.08                                       | 25.16                    |
